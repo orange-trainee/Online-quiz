@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  color: palevioletred;
+}
+
+nav {
+  background: gainsboro;
+  width: 100%;
+  padding: 10px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.logo {
+  width: 60px;
+}
+
+.user-pic {
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-left: 30px;
+
+}
+
+nav ul {
+  width: 100%;
+  text-align: left;
+
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+}
+
+.sub-menu-wrap {
+  position: absolute;
+  top: 82%;
+  right: 0%;
+  max-height: 0px;
+  width: 320px;
+  overflow: hidden;
+  z-index: 100;
+  transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu {
+  max-height: 400px;
+
+}
+
+.sub-menu {
+  background-color: white;
+  padding: 20px;
+  margin: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+
+}
+
+.user-info h3 {
+  font-weight: 500;
+}
+
+.user-info img {
+  width: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.sub-menu hr {
+  border: 0;
+  height: 1px;
+  width: 100%;
+  background: #ccc;
+  margin: 15px 0 10px;
+}
+
+.sub-menu-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  margin: 12px 0;
+}
+
+.sub-menu-link p {
+  width: 100%;
+}
+
+.sub-menu-link img {
+  width: 40px;
+  background: #e5e5e5;
+  border-radius: 50%;
+  padding: 8px;
+  margin-right: 15px;
+}
+
+/* instructions section style */
+section {
+  margin-top: 80PX;
+}
+
+.first-instraction {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.second-instraction {
+  display: flex;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
+  gap: 50px;
+  justify-content: space-around;
+}
+
+.instraction1 {
+  width: 600px;
+}
+
+.instraction1 img {
+  border-radius: 30px;
+  width: 100%;
+}
+
+.instraction2 {
+  width: 500px;
+
+}
+
+.instraction2 img {
+  width: 100%;
+  height: 407PX;
+}
+
+
+
+.background {
+  display: flex;
+  min-height: 100vh;
+  width: 60%;
+  margin-right: 100px;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: RGB(93 82 186);
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: RGB(246 81 41);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: orangered;
+}
+
+.screen-header-button.maximize {
+  background: #e8e925;
+}
+
+.screen-header-button.minimize {
+  background: #74c54f;
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-header-ellipsis {
+  width: 3px;
+  height: 3px;
+  margin-left: 2px;
+  border-radius: 8px;
+  background: #999;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color:RGB(246 81 41) ;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: RGB(246 81 41);
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: white;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 14px;
+
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: white;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: #ea1d6f;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+.site-footer-bottom{
+  margin: 0;
+  padding: 0;
+  height: auto;
+
+}
+.site-footer{
+  padding: 0;
+  margin-top: -400px;
+}
+.app-form-button:hover {
+  color: #b9134f;
+}
+
+.credits {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  color: #ffa4bd;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.credits-link {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dribbble {
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+}
+
+.header {
+  margin-top: 100px;
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+  color: orangered;
+}
+
+.header span {
+  font-size: 30px;
+  color: RGB(93 82 186);
+  font-weight: bolder;
+}
+
+.header p {
+  font-weight: 100;
+  font-size: 15px;
+  color: #888;
+}
+
+.header2 {
+  margin-top: 60px;
+}
+
+.com {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+
+@media screen and (max-width: 1208px) {
+  .instraction2{
+    display: none;
+  }
+  .background {
+    min-height: 300px;
+    width: 90%;
+    margin: auto;
+  }
+  .site-footer{
+    padding: 0;
+    margin-top:0;
+  }
+}
+
+
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .screen-body {
+    padding: 40px;
+  }
+
+  .screen-body-item {
+    padding: 0;
+  }
+}

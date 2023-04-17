@@ -1,0 +1,174 @@
+/* container flex display */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.left {
+    width: 100%;
+    max-width: 500px;
+}
+.hh{
+    display: flex;
+}
+
+
+.right {
+    width: 40%;
+    
+    background-color: #f1f2f7;
+    border-radius: 20px;
+}
+
+.login_img {
+    width: 80%;
+    max-width: 500px;
+    height: 500px;
+}
+
+form {
+    width: 90%;
+    margin:80px auto;
+    max-width: 700px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#policy-terms {
+    width: fit-content;
+    display: inline;
+}
+
+#policy-label {
+    display: inline;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    height: 40px;
+    color: RGB(93 82 186);
+    border: 1px solid RGB(93 82 186);
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: white;
+}
+
+button:hover {
+    background-color: RGB(93 82 186);
+    color: white;
+}
+
+
+/* password hide and show */
+.password {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+.password input {
+    padding: 10px 5px;
+    outline: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.view-img {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 24px;
+    cursor: pointer;
+}
+
+/* error message style */
+.error {
+    color: RGB(246 81 41);
+    margin-bottom: 10px;
+
+}
+
+/*  style check_account */
+.check_account a {
+    text-decoration: none;
+    color: RGB(93 82 186);
+}
+
+.check_account a:hover {
+    text-decoration: underline;
+}
+
+
+/* media queries */
+
+@media screen and (max-width: 768px) {
+    .container {
+        margin-top: 30px;
+    }
+
+    .left,
+    .right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .login_img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    form {
+        /* max-width: 100%; */
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .container {
+        margin-top: 20px;
+    }
+
+    .left,
+    .right {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .login_img {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    form {
+        /* max-width: 100%; */
+        width: 80%;
+        margin: 50px auto;
+    }
+}

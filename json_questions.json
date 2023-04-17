@@ -1,0 +1,75 @@
+[
+  {
+    "title": "JSON stands for",
+    "answer_1": "JavaScript Object Notation",
+    "answer_2": "Java Object Notation",
+    "answer_3": "JavaScript Object Normalization",
+    "answer_4": "JavaScript Object-Oriented Notation",
+    "right_answer": "JavaScript Object Notation"
+  },
+  {
+    "title": "JSON is a _____ for storing and transporting data",
+    "answer_1": "xml format",
+    "answer_2": "text format",
+    "answer_3": "JavaScript",
+    "answer_4": "php format",
+    "right_answer": "text format"
+  },
+  {
+    "title": "The JSON syntax is a subset of the _____ syntax",
+    "answer_1": "Ajax",
+    "answer_2": "Php",
+    "answer_3": "HTML",
+    "answer_4": "JavaScript",
+    "right_answer": "JavaScript"
+  },
+  {
+    "title": "Who is the creator of JSON?",
+    "answer_1": "Alvin Alexander",
+    "answer_2": "Rasmus Lerdorf",
+    "answer_3": "Douglas Crockford",
+    "answer_4": "Jesse James Garrett",
+    "right_answer": "Douglas Crockford"
+  },
+  {
+    "title": "In the JSON syntax, data is separated by _____",
+    "answer_1": "Semicolons",
+    "answer_2": "Colons",
+    "answer_3": "Hyper",
+    "answer_4": "Commas",
+    "right_answer": "Commas"
+  },
+  {
+    "title": "In the JSON syntax, array is written within in ____",
+    "answer_1": "Square brackets",
+    "answer_2": "Curley braces",
+    "answer_3": "Paratheses",
+    "answer_4": "None of the above",
+    "right_answer": "Square brackets"
+  },
+  {
+    "title": "What are the features of JSON?",
+    "answer_1": "Simplicity",
+    "answer_2": "Internationalization",
+    "answer_3": "Extensibility",
+    "answer_4": "All of the above",
+    "right_answer": "All of the above"
+  },
+  {
+    "title": "Which is the correct symbol to insert a comment in JSON?",
+    "answer_1": "//",
+    "answer_2": "/*…*/",
+    "answer_3": "<!-- … -->",
+    "answer_4": "JSON doesn't support the comments",
+    "right_answer": "JSON doesn't support the comments"
+  },
+  {
+    "title": "In the JSON syntax, data is in ____ pairs",
+    "answer_1": "class/object",
+    "answer_2": "name/value",
+    "answer_3": "datatype/variable",
+    "answer_4": "value/=",
+    "right_answer": "name/value"
+  }
+  
+]

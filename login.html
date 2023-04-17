@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="lef">
+            <img src="img/login_signup_page.png" alt="welcome image" class="login_img">
+        </div>
+        <div class="right">
+            <form>
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email">
+                <div id="err_email" class="error"></div>
+
+                <label for="password">Password:</label>
+                <div class="password">
+                    <input class="pass" type="password" id="password" name="password">
+                    <img src="img/view.png" onclick="pass_show()" class="view-img" id="view-img">
+                </div>
+                <div id="err_pass" class="error"></div>
+
+
+                <div class="check_account"><a href="signup.html"> Create new account</a></div>
+
+
+                <button type="submit" value="Register" id="submitbtn">Login</button>
+            </form>
+        </div>
+    </div>
+
+
+   <script src="js/login.js"></script>
+</body>
+
+</html>

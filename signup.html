@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/signup.css">
+    <title>Sign up</title>
+</head>
+
+<body>
+    <div class="hh">  <img src="img/Screenshot_2023-04-14_173107-removebg-preview.png" alt="" width="100px">
+        <h1 class="header">Welcome To <span style="color:RGB(93 82 186)">Online Quiz</span> </h1> </div>
+    
+    <div class="container">
+        
+        <div class="lef">
+            
+            <img src="images/ddd.jpg" alt="welcome image" class="login_img">
+        </div>
+        <div class="right">
+            <form>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name" >
+                <div id="err_name" class="error"></div>
+    
+                <label for="email">Email Address:</label>
+                <input type="text" id="email" name="email" >
+                <div id="err_email" class="error"></div><br>
+    
+                <label for="password">Password:</label>
+                <div class="password">
+                    <input class="pass" type="password" id="password" name="password" >
+                    <img src="img/view.png" onclick="pass_show()" class="view-img" id="view-img">
+                </div>
+                <div id="err_pass" class="error"></div><br>
+    
+    
+                <label for="confirm-password">Confirm Password:</label>
+                <div class="password">
+                    <input class="pass" type="password" id="confirm-password" name="confirm-password" >
+                    <img src="img/view.png" onclick="conf_pass_show()" class="view-img" id="conf-view-img">
+                </div>
+                <div id="err_cpass" class="error"></div><br>
+    
+    
+                <input type="checkbox" id="policy-terms" name="policy-terms" >
+                <label for="policy-terms" id="policy-label">I accept the policy and terms</label>
+                <div id="err_check" class="error"></div><br>
+
+
+                <div class="check_account"><a href="login.html"> I already have an account</a></div>
+    
+                <button type="submit" value="Register" id="submitbtn"><a href="user.html"> Register </a></button>
+            </form>
+        </div>
+        
+    </div>
+
+
+    <script src="js/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+
+#message-history p{
+    border: 1px none ;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: rgb(249, 246, 246);
+    color: black;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: box-shadow .5s;
+    
+}
+#message-history p strong{
+   color: RGB(93 82 186);
+    
+}
+#message-history p:hover {
+    box-shadow: 0 0 15px rgba(33,33,33,.2); 
+  }
+  #message-history {
+    max-height: 200px; /* Set the maximum height of the message history */
+    overflow-y: auto; /* Enable vertical scrolling */
+    display: flex;
+    flex-direction: column-reverse; /* Reverse the order of the message divs */
+  }
+  
+  #message-history div {
+    display: none; /* Hide all message divs by default */
+    padding: 5px;
+    border-bottom: 1px solid #ddd; /* Add a border between message divs */
+  }
+  
+  #message-history div:nth-last-child(-n+10) {
+    display: block; /* Show the last 10 message divs */
+  }
+  
+
+
